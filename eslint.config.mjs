@@ -20,7 +20,7 @@ export default tseslint.config(
     files: ['*.ts', '*.tsx'],
   },
   {
-    ignores: ['**/.next/**/*'],
+    ignores: ['**/.next/**/*', '.storybook/**/*'],
   },
   eslint.configs.recommended,
   tseslint.configs.strictTypeChecked,
