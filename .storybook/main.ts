@@ -11,7 +11,8 @@ const config: StorybookConfig = {
     '@storybook/addon-themes',
   ],
   framework: {
-    name: '@storybook/nextjs',
+    // https://storybook.js.org/docs/get-started/frameworks/nextjs#with-vite
+    name: '@storybook/experimental-nextjs-vite',
     options: {},
   },
   staticDirs: ['../public'],
