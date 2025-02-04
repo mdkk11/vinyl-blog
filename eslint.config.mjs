@@ -7,6 +7,7 @@ import tailwind from 'eslint-plugin-tailwindcss'
 import importPlugin from 'eslint-plugin-import'
 import unusedImports from 'eslint-plugin-unused-imports'
 import eslintConfigPrettier from 'eslint-config-prettier'
+import pluginStorybook from 'eslint-plugin-storybook'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
@@ -25,6 +26,7 @@ export default tseslint.config(
   eslint.configs.recommended,
   tseslint.configs.strictTypeChecked,
   tseslint.configs.stylisticTypeChecked,
+  ...pluginStorybook.configs['flat/recommended'],
   ...compat.extends('next/core-web-vitals'),
   ...tailwind.configs['flat/recommended'],
   // @typescript-eslint
