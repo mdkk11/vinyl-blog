@@ -10,6 +10,8 @@
     --primary-foreground: 0 0% 100%;
     --secondary: 45 80% 95%; /* 淡いベージュ */
     --secondary-foreground: 240 5% 20%;
+    --tertiary: 215 20.2% 65.1%;
+    --tertiary-foreground: 0 0% 98%;
     --muted: 45 50% 92%;
     --muted-foreground: 240 3% 40%;
     --accent: 36 76.9% 55.9%;
@@ -30,6 +32,8 @@
     --primary-foreground: 240 10% 10%;
     --secondary: 240 10% 20%;
     --secondary-foreground: 0 0% 98%;
+    --tertiary: 215, 20.2%, 40%;
+    --tertiary-foreground: 0 0% 98%;
     --muted: 240 10% 20%;
     --muted-foreground: 240 5% 60%;
     --accent: 36 76.9% 55.9%;
