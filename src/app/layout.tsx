@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 
 import './globals.css'
+import { DefaultLayout } from '@/components/Layouts'
 import { ThemeProvider } from '@/providers/ThemeProvider'
 
 export const metadata: Metadata = {
@@ -22,7 +23,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
+          <DefaultLayout>{children}</DefaultLayout>
         </ThemeProvider>
       </body>
     </html>
