@@ -6,7 +6,7 @@ import { cn } from '@/utils'
 
 export const anchorButtonVariants = cva(
   [
-    'relative inline-flex items-center justify-center border border-primary font-semibold text-primary transition-colors hover:opacity-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50',
+    'relative inline-flex items-center justify-center border font-semibold transition-all ease-in-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 aria-disabled:pointer-events-none aria-disabled:opacity-50',
   ],
   {
     variants: {
