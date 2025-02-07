@@ -39,3 +39,10 @@ export function assertIsObject(
     throw new Error(`${target} should be object`.trim())
   }
 }
+
+export function isCurrent(
+  flag: boolean,
+): React.AnchorHTMLAttributes<HTMLAnchorElement> {
+  if (!flag) return {}
+  return { 'aria-current': 'page' }
+}
