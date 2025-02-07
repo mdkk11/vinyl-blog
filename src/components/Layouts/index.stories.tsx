@@ -1,15 +1,14 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { Layout } from '.'
+import { DefaultLayout } from '.'
 
-const meta: Meta<typeof Layout> = {
-  title: 'Common/Layout',
-  component: Layout,
-  tags: ['autodocs'],
+const meta: Meta<typeof DefaultLayout> = {
+  title: 'Layouts/DefaultLayout',
+  component: DefaultLayout,
 }
 
 export default meta
-type Story = StoryObj<typeof Layout>
+type Story = StoryObj<typeof DefaultLayout>
 
 export const Default: Story = {
   args: {
