@@ -4,7 +4,7 @@ import { ChevronLeftIcon, ChevronRightIcon } from 'lucide-react'
 import { PaginationLink } from '.'
 
 const meta: Meta<typeof PaginationLink> = {
-  title: 'Posts/PaginationLink',
+  title: 'Common/PaginationLink',
   component: PaginationLink,
   args: {
     href: '/',
