@@ -1,15 +1,15 @@
 'use client'
 
-import { usePathname } from 'next/navigation'
 import * as React from 'react'
 
 import { NavLink } from '@/components/Layouts/NavLink'
 import { ThemeToggleButton } from '@/components/ThemeToggleButton'
+import { useCurrentPath } from '@/hooks/useCurrentPath'
 import { Path } from '@/types'
 import { isCurrent } from '@/utils'
 
 export const Nav = ({ paths }: { paths: readonly Path[] }) => {
-  const pathname = usePathname()
+  const { isMatchPath } = useCurrentPath()
 
   return (
     <nav className="hidden md:flex">
@@ -18,8 +18,8 @@ export const Nav = ({ paths }: { paths: readonly Path[] }) => {
           <li key={path.title}>
             <NavLink
               href={path.href}
-              current={!!isCurrent(pathname === path.href)}
-              {...isCurrent(pathname === path.href)}
+              current={isMatchPath(path.href)}
+              {...isCurrent(isMatchPath(path.href))}
             >
               {path.title}
             </NavLink>

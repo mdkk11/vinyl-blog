@@ -1,11 +1,11 @@
 'use client'
 
 import { Menu, X } from 'lucide-react'
-import { usePathname } from 'next/navigation'
 
 import { Button } from '@/components/Button'
 import { NavLink } from '@/components/Layouts/NavLink'
 import { ThemeToggleButton } from '@/components/ThemeToggleButton'
+import { useCurrentPath } from '@/hooks/useCurrentPath'
 import { Path } from '@/types'
 import { isCurrent } from '@/utils'
 
@@ -13,7 +13,7 @@ import { useMobileNav } from './useMobileNav'
 
 export const MobileNav = ({ paths }: { paths: readonly Path[] }) => {
   const { isShow, onToggleNav } = useMobileNav()
-  const pathname = usePathname()
+  const { isMatchPath } = useCurrentPath()
 
   return (
     <div className="md:hidden">
@@ -50,8 +50,8 @@ export const MobileNav = ({ paths }: { paths: readonly Path[] }) => {
                   href={path.href}
                   onClick={onToggleNav}
                   className="decoration-primary-foreground"
-                  current={!!isCurrent(pathname === path.href)}
-                  {...isCurrent(pathname === path.href)}
+                  current={isMatchPath(path.href)}
+                  {...isCurrent(isMatchPath(path.href))}
                 >
                   {path.title}
                 </NavLink>
