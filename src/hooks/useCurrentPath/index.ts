@@ -7,8 +7,6 @@ export function useCurrentPath() {
 
   function isMatchPath(href: string): boolean {
     const dynamicRoot = getDynamicRoot(href)
-    console.log(dynamicRoot)
-
     if (dynamicRoot) {
       return pathname.startsWith(dynamicRoot)
     }
