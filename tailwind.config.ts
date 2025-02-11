@@ -1,3 +1,4 @@
+import typographyPlugin from '@tailwindcss/typography'
 import type { Config } from 'tailwindcss'
 import animatePlugin from 'tailwindcss-animate'
 
@@ -53,5 +54,5 @@ module.exports = {
       },
     },
   },
-  plugins: [animatePlugin],
+  plugins: [animatePlugin, typographyPlugin],
 } satisfies Config
