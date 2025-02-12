@@ -12,7 +12,9 @@ export const Header = () => {
       <div className="mx-auto flex w-full items-center justify-between lg:max-w-7xl">
         <Heading />
         <div>
-          <MobileNav paths={HeaderNavPaths} />
+          <React.Suspense>
+            <MobileNav paths={HeaderNavPaths} />
+          </React.Suspense>
           <Nav paths={HeaderNavPaths} />
         </div>
       </div>
