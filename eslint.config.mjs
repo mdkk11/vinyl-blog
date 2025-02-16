@@ -48,7 +48,7 @@ export default tseslint.config(
   {
     settings: {
       tailwindcss: {
-        whitelist: ['hidden-scrollbar', '-webkit-scrollbar'],
+        whitelist: ['hidden-scrollbar', '-webkit-scrollbar', 'content'],
       },
     },
   },
