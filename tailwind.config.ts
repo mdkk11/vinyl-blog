@@ -52,6 +52,47 @@ module.exports = {
         md: `calc(var(--radius) - 2px)`,
         sm: 'calc(var(--radius) - 4px)',
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            maxWidth: '100ch',
+            code: {
+              color: 'hsl(var(--tertiary-foreground))',
+              padding: '2px 4px',
+              borderRadius: '4px',
+              margin: '0 2px',
+              background: 'hsl(var(--tertiary))',
+              '&::before': { content: `unset !important` },
+              '&::after': { content: `unset !important` },
+              fontWeight: 'normal',
+            },
+            'a code': {
+              fontSize: '1em',
+            },
+            h2: {
+              paddingTop: '1rem',
+              paddingBottom: '0.75rem',
+            },
+            'h2 code': {
+              color: 'hsl(var(--tertiary-foreground))',
+            },
+            h3: {
+              paddingTop: '0.75rem',
+              paddingBottom: '0.5rem',
+            },
+            'h3 code': {
+              color: 'hsl(var(--tertiary-foreground))',
+            },
+            h4: {
+              paddingTop: '0.5rem',
+              paddingBottom: '0.25rem',
+            },
+            'h4 code': {
+              color: 'hsl(var(--tertiary-foreground))',
+            },
+          },
+        },
+      },
     },
   },
   plugins: [animatePlugin, typographyPlugin],

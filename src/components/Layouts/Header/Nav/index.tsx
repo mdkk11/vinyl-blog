@@ -2,10 +2,10 @@
 
 import * as React from 'react'
 
-import { NavLink } from '@/components/Layouts/NavLink'
-import { ThemeToggleButton } from '@/components/ThemeToggleButton'
+import { NavLink } from '@/components/layouts/NavLink'
+import { ThemeToggleButton } from '@/components/ui/ThemeToggleButton'
 import { useCurrentPath } from '@/hooks/useCurrentPath'
-import { Path } from '@/types'
+import { Path } from '@/types/utils'
 import { isCurrent } from '@/utils'
 
 export const Nav = ({ paths }: { paths: readonly Path[] }) => {

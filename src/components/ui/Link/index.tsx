@@ -6,7 +6,7 @@ import { cn } from '@/utils'
 
 export const linkVariants = cva(
   [
-    'underline-offset-[6px] hover:underline disabled:pointer-events-none disabled:opacity-50',
+    'underline-offset-[6px] hover:underline hover:opacity-70 disabled:pointer-events-none disabled:opacity-50',
   ],
   {
     variants: {

@@ -2,11 +2,11 @@
 
 import { Menu, X } from 'lucide-react'
 
-import { Button } from '@/components/Button'
-import { NavLink } from '@/components/Layouts/NavLink'
-import { ThemeToggleButton } from '@/components/ThemeToggleButton'
+import { NavLink } from '@/components/layouts/NavLink'
+import { Button } from '@/components/ui/Button'
+import { ThemeToggleButton } from '@/components/ui/ThemeToggleButton'
 import { useCurrentPath } from '@/hooks/useCurrentPath'
-import { Path } from '@/types'
+import { Path } from '@/types/utils'
 import { isCurrent } from '@/utils'
 
 import { useMobileNav } from './useMobileNav'

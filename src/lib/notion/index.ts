@@ -7,6 +7,6 @@ const notion = new Client({
 
 const n2m = new NotionToMarkdown({ notionClient: notion })
 
-const databaseId = process.env.DATABASE_ID ?? ''
+const DATABASE_ID = process.env.DATABASE_ID ?? ''
 
-export { notion, n2m, databaseId }
+export { notion, n2m, DATABASE_ID }
